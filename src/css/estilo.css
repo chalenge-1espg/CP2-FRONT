@@ -1,116 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&family=Oswald:wght@200..700&display=swap');
+
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #8B0000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
-  /* Navegação */
-  nav {
-    background-color: #A52A2A;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #FFD700;
-  }
-  
-  /* Banner */
-  .banner {
-    background-image: url('https://source.unsplash.com/1200x400/?restaurant,food');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2em;
-    text-shadow: 2px 2px 5px #000;
-    text-align: center;
-  }
-  
-  /* Seções */
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  h2 {
-    color: #8B0000;
-    margin-bottom: 20px;
-  }
-  
-  /* Cardápio */
-  .menu-destaque {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .prato {
-    flex: 1 1 250px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .prato:hover {
-    transform: scale(1.03);
-  }
-  
-  .prato h3 {
-    margin-bottom: 10px;
-    color: #A52A2A;
-  }
-  
-  /* Contato e horário */
-  #horario p,
-  #contato p {
-    margin: 10px 0;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #8B0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+header p {
+  font-size: 1.2em;
+  font-family: 'Exile', cursive;
+}
+
+/* Navegação */
+nav {
+  background-color: #A52A2A;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Banner */
+.banner {
+  background-image: url('https://source.unsplash.com/1200x400/?restaurant,food');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  font-family: 'Exile', cursive;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #8B0000;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Cardápio */
+.menu-destaque {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prato {
+  flex: 1 1 250px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.prato:hover {
+  transform: scale(1.03);
+}
+
+.prato h3 {
+  margin-bottom: 10px;
+  color: #A52A2A;
+  font-family: 'Oswald', sans-serif;
+}
+
+.prato p {
+  font-family: 'Exile', cursive;
+}
+
+/* Contato e horário */
+#horario p,
+#contato p {
+  margin: 10px 0;
+  font-family: 'Exile', cursive;
+}
+
+/* Rodapé */
+footer {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  font-family: 'Oswald', sans-serif;
+}
