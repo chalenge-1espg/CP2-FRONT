@@ -1,0 +1,80 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffaf3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Barra de navegação */
+  a {
+    display: inline-block;
+    margin: 20px 15px;
+    text-decoration: none;
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #e74c3c;
+  }
+  
+  /* Container dos pratos */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  
+  /* Estilo dos itens do cardápio */
+  .menu-container div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .menu-container div:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Título do prato */
+  .menu-container h2 {
+    text-align: center;
+    color: #d35400;
+    margin: 15px 0 5px;
+  }
+  
+  /* Imagens */
+  .menu-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  /* Descrição e preço */
+  .menu-container p {
+    margin: 10px 15px;
+    font-size: 0.95em;
+    color: #555;
+  }
+  
+  .menu-container p b {
+    color: #27ae60;
+  }
+  
