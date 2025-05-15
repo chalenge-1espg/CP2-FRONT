@@ -31,33 +31,38 @@ a:hover {
 
 /* ====== CONTAINER GERAL DOS PRATOS ====== */
 div {
-  max-width: 1100px;
+  max-width: 350px; /* Ajustando para que o card tenha uma largura mais controlada */
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   background-color: #fefefe;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
   transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 /* ====== TÍTULOS DOS PRATOS ====== */
 div h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #8b0000;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* ====== IMAGENS DOS PRATOS ====== */
 div img {
   width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  height: 250px; /* Fixando a altura para as imagens não ficarem esticadas */
+  object-fit: cover; /* Mantendo a proporção e cobrindo a área do card */
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 /* ====== DESCRIÇÃO E PREÇO ====== */
@@ -65,7 +70,7 @@ div p {
   font-family: 'Exile', cursive;
   font-size: 1.1rem;
   color: #444;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 /* ====== SEÇÃO DE CONTATO ====== */
@@ -106,10 +111,11 @@ footer {
 @media (max-width: 768px) {
   div {
     padding: 15px;
+    max-width: 90%; /* Ampliando um pouco o card no mobile */
   }
 
   div img {
-    max-height: 200px;
+    height: 200px; /* Ajustando o tamanho da imagem no mobile */
   }
 
   a {
