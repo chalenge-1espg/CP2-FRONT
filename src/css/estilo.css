@@ -29,9 +29,9 @@ header h1 {
 nav {
   background-color: #a52a2a;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 nav ul {
