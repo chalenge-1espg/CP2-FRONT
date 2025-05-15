@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exile&family=Oswald:wght@200..700&display=swap');
 
 /* ====== RESET GLOBAL ====== */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,59 @@ body {
   color: #333;
   line-height: 1.6;
 }
+/* Tela de entrada */
+#entradaTela {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo escurecido com mais opacidade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 4s forwards;
+}
 
+.entrada-texto h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #ff0000; /* Cor vermelha para o título */
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.entrada-texto p {
+  font-family: 'Oswald', sans-serif;
+  color: #fff; /* Mantemos o texto branco para contraste */
+  font-size: 1.5rem;
+}
+
+/* Animação de fade-in e fade-out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Configurações para o restante da página após a animação */
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Após a tela de entrada sumir, o conteúdo vai aparecer */
+body.anime {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
 /* ====== CABEÇALHO ====== */
 header {
   background-color: #8b0000;

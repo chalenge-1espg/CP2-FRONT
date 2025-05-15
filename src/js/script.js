@@ -42,7 +42,7 @@ const pratos = [
   }
   
   // Intervalo automático
-  setInterval(trocarPrato, 4000);
+  setInterval(trocarPrato, 2500);
   
   // Redirecionamento
   function irParaCardapio() {
