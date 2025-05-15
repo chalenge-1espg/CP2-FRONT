@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Hunters</title>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Hermanos - Início</title>
     <link rel="stylesheet" href="./src/css/estilo.css" />
-</head>
+  </head>
 
-<body>
-    </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Los Hermanos</h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/cardapio.html">Cardápio</a></li>
+          <li><a href="./pages/sobre.html">Sobre</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <body>
+    <main>
+        <!-- Destaque / Introdução -->
+        <section class="banner">
+          <h2>Bem-vindo ao Los Hunters</h2>
+          <p>Sabores autênticos do México direto para sua mesa!</p>
+        </section>
+        
+      <!-- Banner ou slideshow -->
+      <section class="slideshow">
+        <img id="slide-img" src="./src/assets/imagem12.jpg" alt="Imagem do Restaurante" onclick="window.location.href='./pages/cardapio.html'" style="cursor:pointer; width: 100%; max-height: 400px; object-fit: cover;" />
+      </section>
 
-        <header>
-            <h1>Los Hunters</h1>
-            <p>Comendo como se estivesse no México!</p>
-        </header>
 
-        <section>  <p>  <img id="Bandeira-img" src="./src/assets/imagem6.png" alt="México" /></p></section>
+      <!-- Pratos em destaque -->
+      <section>
+        <h2>Pratos em Destaque</h2>
+        <div class="menu-destaque">
+          <div class="prato">
+            <h3>Combo Taco Loco</h3>
+            <p>Uma loucura mexicana com tacos, molhos e sabores intensos.</p>
+          </div>
+          <div class="prato">
+            <h3>Nacho Macho</h3>
+            <p>Nachos crocantes com cheddar, guacamole e pimenta mexicana.</p>
+          </div>
+          <div class="prato">
+            <h3>Quesadilla da Casa</h3>
+            <p>Recheada com muito queijo, carne e temperos caseiros.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./src/pages/cardapio.html">Cardápio</a>
-            <a href="./src/pages/sobre.html">sobre</a>
-            <a href="./src/pages/contato.html">Contato</a>
-        </nav>
-
-        <div class="banner">
-            <h2>Bien Venidos a Los Hunters</h2> 
+    <footer>
+      <div class="footer-conteudo">
+        <div class="footer-esquerda">
+          <p>&copy; 2025 Los Hunters - Todos os direitos reservados.</p>
         </div>
 
-        <section id="cardapio">
-            <h2>Pratos em Destaque</h2>
-            <div class="menu-destaque">
-                <div class="prato">
-                    <h3>Combo Taco Loco</h3>
-                    <p>Simplesmente uma loucura mexicana de sabor em um só prato</p>
-                </div>
-                <div class="prato">
-                    <h3>Nacho Macho</h3>
-                    <p> Com Guacamole tudo fica melhor </p>
-                </div>
-                <div class="prato">
-                    <h3>Quesadilla da Casa  </h3>
-                    <p> Nada fica mal com um pouco de queijo né </p>
-                </div>
-            </div>
-        </section>
+        <div class="footer-meio">
+          <h4>Nos siga nas redes sociais</h4>
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+              <img src="./src/assets/instagram.png" alt="Instagram" width="24" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+              <img src="./src/assets/twitter.png" alt="Twitter" width="24" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+              <img src="./src/assets/facebook.png" alt="Facebook" width="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>📍 Rua dos Hunters, 000 - Centro</p>
-            <p>📞 (11) 0000-0000</p>
-            <p>📧 contato@loshunters.com</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Los Hunters - Todos os direitos reservados</p>
-        </footer>
-
-    </body>
-
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
