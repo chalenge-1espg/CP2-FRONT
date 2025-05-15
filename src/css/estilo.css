@@ -54,12 +54,75 @@ nav ul li a:hover {
 }
 
 /* ====== BANNER OU SLIDESHOW ====== */
-.slideshow img {
-  width: 100%;
-  max-height: 450px;
-  object-fit: cover;
-  display: block;
+.carrossel-cardapio {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #fff8f5;
 }
+
+.cardapio-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border: 3px solid #a52a2a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.cardapio-card:hover {
+  transform: scale(1.02);
+}
+
+.cardapio-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.cardapio-card .info {
+  padding: 20px;
+  text-align: center;
+}
+
+.cardapio-card h3 {
+  color: #8b0000;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.cardapio-card p {
+  font-family: 'Exile', cursive;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cardapio-card button {
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardapio-card button:hover {
+  background-color: #8b0000;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .cardapio-card img {
+    height: 200px;
+  }
+}
+
 
 /* ====== BANNER FIXO TEXTO ====== */
 .banner {

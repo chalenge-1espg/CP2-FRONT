@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Hermanos - Início</title>
     <link rel="stylesheet" href="./src/css/estilo.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav>
-        <h1>Los Hermanos</h1>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/cardapio.html">Cardápio</a></li>
-          <li><a href="./pages/sobre.html">Sobre</a></li>
-          <li><a href="./pages/contato.html">Contato</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <h1>Los Hermanos</h1>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/cardapio.html">Cardápio</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <!-- Destaque / Introdução -->
         <section class="banner">
-          <h2>Bem-vindo ao Los Hunters</h2>
-          <p>Sabores autênticos do México direto para sua mesa!</p>
+            <h2>Bem-vindo ao Los Hunters</h2>
+            <p>Sabores autênticos do México direto para sua mesa!</p>
         </section>
-        
-      <!-- Banner ou slideshow -->
-      <section class="slideshow">
-        <img id="slide-img" src="./src/assets/imagem12.jpg" alt="Imagem do Restaurante" onclick="window.location.href='./pages/cardapio.html'" style="cursor:pointer; width: 100%; max-height: 400px; object-fit: cover;" />
-      </section>
+
+        <!-- Banner ou slideshow -->
+        <section class="carrossel-cardapio">
+            <div class="cardapio-card" id="cardapio-carrossel">
+                <img id="imagem-cardapio" src="./src/assets/imagem1.jpg" alt="Prato Especial" />
+                <div class="info">
+                    <h3 id="titulo-cardapio">Taco Loco</h3>
+                    <p id="descricao-cardapio">Muito sabor pra você se sentir no México!</p>
+                    <button onclick="irParaCardapio()">Ver Cardápio</button>
+                </div>
+            </div>
+        </section>
 
 
-      <!-- Pratos em destaque -->
-      <section>
-        <h2>Pratos em Destaque</h2>
-        <div class="menu-destaque">
-          <div class="prato">
-            <h3>Combo Taco Loco</h3>
-            <p>Uma loucura mexicana com tacos, molhos e sabores intensos.</p>
-          </div>
-          <div class="prato">
-            <h3>Nacho Macho</h3>
-            <p>Nachos crocantes com cheddar, guacamole e pimenta mexicana.</p>
-          </div>
-          <div class="prato">
-            <h3>Quesadilla da Casa</h3>
-            <p>Recheada com muito queijo, carne e temperos caseiros.</p>
-          </div>
-        </div>
-      </section>
+
+        <!-- Pratos em destaque -->
+        <section>
+            <h2>Pratos em Destaque</h2>
+            <div class="menu-destaque">
+                <div class="prato">
+                    <h3>Combo Taco Loco</h3>
+                    <p>Uma loucura mexicana com tacos, molhos e sabores intensos.</p>
+                </div>
+                <div class="prato">
+                    <h3>Nacho Macho</h3>
+                    <p>Nachos crocantes com cheddar, guacamole e pimenta mexicana.</p>
+                </div>
+                <div class="prato">
+                    <h3>Quesadilla da Casa</h3>
+                    <p>Recheada com muito queijo, carne e temperos caseiros.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div class="footer-conteudo">
-        <div class="footer-esquerda">
-          <p>&copy; 2025 Los Hunters - Todos os direitos reservados.</p>
-        </div>
+        <div class="footer-conteudo">
+            <div class="footer-esquerda">
+                <p>&copy; 2025 Los Hunters - Todos os direitos reservados.</p>
+            </div>
 
-        <div class="footer-meio">
-          <h4>Nos siga nas redes sociais</h4>
-          <div class="redes-sociais">
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-              <img src="./src/assets/instagram.png" alt="Instagram" width="24" />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-              <img src="./src/assets/twitter.png" alt="Twitter" width="24" />
-            </a>
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-              <img src="./src/assets/facebook.png" alt="Facebook" width="24" />
-            </a>
-          </div>
+            <div class="footer-meio">
+                <h4>Nos siga nas redes sociais</h4>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <img src="./src/assets/instagram.png" alt="Instagram" width="24" />
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="./src/assets/twitter.png" alt="Twitter" width="24" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="./src/assets/facebook.png" alt="Facebook" width="24" />
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <script src="./src/js/script.js"></script>
-  </body>
+</body>
+
 </html>
