@@ -58,7 +58,7 @@ nav ul li a:hover {
 .carrossel-cardapio {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: #fff8f5;
 }
 
@@ -116,30 +116,18 @@ nav ul li a:hover {
   background-color: #8b0000;
 }
 
-/* ====== BANNER FIXO TEXTO ====== */
-.banner {
-  background-image: url('https://source.unsplash.com/1200x400/?restaurant,food');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 5px #000;
-  text-align: center;
-  padding: 20px;
-}
-
-.banner h2 {
+/* ====== TEXTO BEM VINDOS ====== */
+.texto-boasVindas h2 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Diminuindo a margem inferior */
+  text-align: center;
 }
 
-.banner p {
+.texto-boasVindas p {
   font-family: 'Exile', cursive;
   font-size: 1.3rem;
+  margin-top: 0; /* Removendo a margem superior */
+  text-align: center;
 }
 
 /* ====== SEÇÕES GERAIS ====== */
@@ -156,11 +144,17 @@ h2 {
 }
 
 /* ====== CARDÁPIO ====== */
+#destaque{
+  text-align: center;
+  font-family: 'Exile', cursive;
+}
+
 .menu-destaque {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  text-align: center;
 }
 
 .prato {
