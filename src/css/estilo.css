@@ -37,8 +37,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -62,7 +62,6 @@ nav ul li a:hover {
 }
 
 .cardapio-card {
-  width: 100%;
   max-width: 500px;
   background-color: #fff;
   border: 3px solid #a52a2a;
@@ -115,14 +114,6 @@ nav ul li a:hover {
 .cardapio-card button:hover {
   background-color: #8b0000;
 }
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .cardapio-card img {
-    height: 200px;
-  }
-}
-
 
 /* ====== BANNER FIXO TEXTO ====== */
 .banner {
@@ -276,29 +267,34 @@ footer {
 
 .topico ul li {
   margin-bottom: 6px;
-}
 
-/* ====== RESPONSIVIDADE ====== */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+  /* ====== RESPONSIVIDADE ====== */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
 
-  .menu-destaque {
-    flex-direction: column;
-    align-items: center;
-  }
+    .menu-destaque {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .footer-conteudo {
-    text-align: center;
-  }
+    .footer-conteudo {
+      text-align: center;
+    }
 
-  .banner h2 {
-    font-size: 2rem;
-  }
+    .banner h2 {
+      font-size: 2rem;
+    }
 
-  .banner p {
-    font-size: 1rem;
+    .banner p {
+      font-size: 1rem;
+    }
+
+    .prato {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exile&family=Oswald:wght@200..700&display=swap');
 
-/* Reset */
+/* ====== RESET GLOBAL ====== */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-/* Navegação simples */
+/* ====== NAVEGAÇÃO SIMPLES ====== */
 a {
   display: inline-block;
   margin: 10px 15px;
@@ -29,14 +29,14 @@ a:hover {
   color: #ffd700;
 }
 
-/* Container geral de pratos */
+/* ====== CONTAINER GERAL DOS PRATOS ====== */
 div {
   max-width: 1100px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fefefe;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -44,14 +44,14 @@ div:hover {
   transform: scale(1.02);
 }
 
-/* Títulos dos pratos */
+/* ====== TÍTULOS DOS PRATOS ====== */
 div h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #8b0000;
   margin-bottom: 10px;
 }
 
-/* Imagens dos pratos */
+/* ====== IMAGENS DOS PRATOS ====== */
 div img {
   width: 100%;
   max-height: 250px;
@@ -60,15 +60,15 @@ div img {
   margin-bottom: 10px;
 }
 
-/* Descrição e preço */
+/* ====== DESCRIÇÃO E PREÇO ====== */
 div p {
   font-family: 'Exile', cursive;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #444;
   margin-bottom: 8px;
 }
 
-/* Seção de contato */
+/* ====== SEÇÃO DE CONTATO ====== */
 #contato {
   max-width: 900px;
   margin: 50px auto 20px;
@@ -76,13 +76,13 @@ div p {
   background-color: #fff8f5;
   border-left: 8px solid #a52a2a;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 #contato h2 {
   color: #8b0000;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 #contato p {
@@ -91,7 +91,7 @@ div p {
   margin-bottom: 8px;
 }
 
-/* Rodapé */
+/* ====== RODAPÉ ====== */
 footer {
   background-color: #8b0000;
   color: white;
@@ -102,7 +102,7 @@ footer {
   font-family: 'Oswald', sans-serif;
 }
 
-/* Responsivo */
+/* ====== RESPONSIVO ====== */
 @media (max-width: 768px) {
   div {
     padding: 15px;
@@ -115,5 +115,13 @@ footer {
   a {
     display: block;
     margin: 10px 0;
+  }
+
+  #contato {
+    padding: 20px;
+  }
+
+  #contato h2 {
+    font-size: 1.4rem;
   }
 }
