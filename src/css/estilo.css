@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exile&family=Oswald:wght@200..700&display=swap');
 
 /* ====== RESET GLOBAL ====== */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -15,32 +13,39 @@ body {
   color: #333;
   line-height: 1.6;
 }
-/* Tela de entrada */
+
+/* ====== TELA DE ENTRADA ====== */
 #entradaTela {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Fundo escurecido com mais opacidade */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Fundo escurecido com mais opacidade */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  opacity: 0;
+  opacity: 1;
   animation: fadeInOut 4s forwards;
+  /* A tela de entrada será animada para desaparecer */
 }
 
 .entrada-texto h1 {
   font-family: 'Oswald', sans-serif;
-  color: #ff0000; /* Cor vermelha para o título */
+  color: transparent;
   font-size: 3rem;
   margin-bottom: 15px;
+  background: linear-gradient(to right, #006747, #ffffff, #e4002b);
+  /* Gradiente com as cores da bandeira mexicana */
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .entrada-texto p {
-  font-family: 'Oswald', sans-serif;
-  color: #fff; /* Mantemos o texto branco para contraste */
+  font-family: 'Exile', cursive;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -49,25 +54,25 @@ body {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
-/* Configurações para o restante da página após a animação */
-body {
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
+/* Remover a tela de entrada após a animação */
+#entradaTela.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  /* Desativa os eventos de mouse enquanto a tela de entrada está invisível */
+  z-index: -1;
+  /* Move a tela para trás, permitindo que a página seja clicada */
 }
 
-/* Após a tela de entrada sumir, o conteúdo vai aparecer */
-body.anime {
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
-}
 /* ====== CABEÇALHO ====== */
 header {
   background-color: #8b0000;
@@ -173,14 +178,14 @@ nav ul li a:hover {
 /* ====== TEXTO BEM VINDOS ====== */
 .texto-boasVindas h2 {
   font-size: 2.5rem;
-  margin-bottom: 5px; /* Diminuindo a margem inferior */
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .texto-boasVindas p {
   font-family: 'Exile', cursive;
   font-size: 1.3rem;
-  margin-top: 0; /* Removendo a margem superior */
+  margin-top: 0;
   text-align: center;
 }
 
@@ -198,7 +203,7 @@ h2 {
 }
 
 /* ====== CARDÁPIO ====== */
-#destaque{
+#destaque {
   text-align: center;
   font-family: 'Exile', cursive;
 }
@@ -316,34 +321,34 @@ footer {
 
 .topico ul li {
   margin-bottom: 6px;
+}
 
-  /* ====== RESPONSIVIDADE ====== */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .menu-destaque {
-      flex-direction: column;
-      align-items: center;
-    }
+  .menu-destaque {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-conteudo {
-      text-align: center;
-    }
+  .footer-conteudo {
+    text-align: center;
+  }
 
-    .banner h2 {
-      font-size: 2rem;
-    }
+  .banner h2 {
+    font-size: 2rem;
+  }
 
-    .banner p {
-      font-size: 1rem;
-    }
+  .banner p {
+    font-size: 1rem;
+  }
 
-    .prato {
-      width: 100%;
-      max-width: 100%;
-    }
+  .prato {
+    width: 100%;
+    max-width: 100%;
   }
 }
